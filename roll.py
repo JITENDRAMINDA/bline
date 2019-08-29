@@ -15,29 +15,29 @@ def ran(client, message):
   if x == "0":
    client.send_animation(message.chat.id, "CgADBQADlgADFRDAVS4QNlZj7e0GAg" )
   if x == "1":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADtwADEYA4VyjO2wqnLbvnAg" )
   if x == "2":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD3QADVBY4V17nJPA-PTPYAg" )
   if x == "3":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD0wADVBY4V7Mc8QcSTRCYAg" )
   if x == "4":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADaAADX5dBV6mt57JxyTMBAg" )
   if x == "5":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD2wADVBY4V_BrM-8X1M94Ag" )
   if x == "6":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADmwADFRDAVVde30DGm0f7Ag" )
   if x == "7":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD5QADdQc4V0hWfTVrfF6yAg" )
   if x == "8":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD2wADVBZAV0kHSM48XtTrAg" )
   if x == "9":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD2gADVBZAV2kuLJ8h2AJyAg" )
   if x == "10":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADbQADX5dBV2QqRhLcUvKMAg" )
   if x == "11":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD5AADdQc4V934XGfcsrtnAg" )
   if x == "12":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADpAADOFM5V4YgdVy1GVdpAg" )
   if x == "13":
    client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
   if x == "14":
@@ -75,8 +75,8 @@ def ran(client, message):
   if x == "30":
    client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
   if x == "31":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADpwADOFM5V9cHrY3ZQuJSAg" )
   if x == "32":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADggAD54M4V-t0KkcVPKV6Ag" )
 
 app.run()
