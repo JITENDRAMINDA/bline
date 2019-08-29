@@ -39,41 +39,41 @@ def ran(client, message):
   if x == "12":
    client.send_animation(message.chat.id, "CgADBQADpAADOFM5V4YgdVy1GVdpAg" )
   if x == "13":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1QADVBY4V_6h9xBLutmCAg" )
   if x == "14":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADtgADEYA4V_pg-4Jl5SySAg" )
   if x == "15":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD0gADVBY4VzxDkHew1bB6Ag" )
   if x == "16":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADagADX5dBVzTWGhOj0OBHAg" )
   if x == "17":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1wADVBY4VymnRRVe5pjOAg" )
   if x == "18":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1AADVBY4V1A5FjAmR-8kAg" )
   if x == "19":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1gADVBY4VyWzvQUC6WhEAg" )
   if x == "20":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADawADX5dBV_9-xxXY1e1-Ag" )
   if x == "21":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADZgADX5dBV7El-9jgwvCgAg" )
   if x == "22":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD4wADdQc4V3sC1ZiORYd3Ag" )
   if x == "23":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADbgADX5dBVwwxdKA8zWZ_Ag" )
   if x == "24":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1gADVBZAV0iameGRFBPfAg" )
   if x == "25":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD3AADVBZAV_L-S03PVrhkAg" )
   if x == "26":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADVgADGxNBVw9kYTrmw-FlAg" )
   if x == "27":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD1wADVBZAVzhgAAHZuNXXowI" )
   if x == "28":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD3AADVBY4V3TJZJE0zsiaAg" )
   if x == "29":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQAD2QADVBZAV17jXyNmoFxFAg" )
   if x == "30":
-   client.send_animation(message.chat.id, " CgADBQADlgADFRDAVS4QNlZj7e0GAg " )
+   client.send_animation(message.chat.id, "CgADBQADbwADX5dBV2O9bSVe5xbkAg" )
   if x == "31":
    client.send_animation(message.chat.id, "CgADBQADpwADOFM5V9cHrY3ZQuJSAg" )
   if x == "32":
