@@ -1,11 +1,6 @@
-from pyrogram import Client, Filters, Emoji
+from pyrogram import Client, Filters
 import random
-import time
-
 app = Client("session",bot_token="820881097:AAHM0xwwTv1HVztMZ9PHLktj-2AAwBXZdVI",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
-
- 
-
 @app.on_message(Filters.command('ani'))
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
