@@ -6,11 +6,13 @@ def forward(client, message):
  with open("sure.txt" , "w") as file:
   file.write("001 002")
   file.close()
+  message.reply("ok")
 @app.on_message(Filters.command("set"))
 def forward(client, message):
   with open("source.txt" , "w") as file:
    file.write(message.text.split(' ')[1])
    file.close()
+   message.reply("ok")
 @app.on_message( Filters.text & ~Filters.edited)
 def forward(client, message):
  fil = open("source.txt" , "r")
