@@ -1,6 +1,16 @@
 from pyrogram import Client, Filters
 app = Client("baaz",869912,"a7b049e08df35464047d57e5134327e5")
 d = -1001378725482
+@app.on_message(Filters.command("clear"))
+def forward(client, message):
+ with open("sure.txt" , "w") as file:
+  file.write("001 002")
+  file.close()
+@app.on_message(Filters.command("set"))
+def forward(client, message):
+  with open("source.txt" , "w") as file:
+   file.write(message.text.split(' ')[1])
+   file.close()
 @app.on_message( Filters.text & ~Filters.edited)
 def forward(client, message):
  fil = open("source.txt" , "r")
@@ -37,14 +47,5 @@ def forward(client, message):
       client.edit_message_text(d,int(x[x.index(id)+1]),"<b>" + message.text.replace("🇩🇪","🇳🇮").replace("🎾","🥎").replace("🖲","🧤").replace("📟","🛑").replace("WD","🔷 WIDE BALL 🔷").replace("/","~").replace("CHALU RAKHO","GAME STARTED, PLAYERS ON THE STEDIUM ").replace("NB","🔷 NO BALL 🔷") + "</b>", parse_mode="html" )
      except FloodWait as e:
       time.sleep(e.x)
-@app.on_message(Filters.command("clear"))
-def forward(client, message):
- with open("sure.txt" , "w") as file:
-  file.write("001 002")
-  file.close()
-@app.on_message(Filters.command("set"))
-def forward(client, message):
-  with open("source.txt" , "w") as file:
-   file.write(message.text.split(' ')[1])
-   file.close()
+
 app.run()
