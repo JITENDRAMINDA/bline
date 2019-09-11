@@ -9,10 +9,10 @@ def forward(client, message):
   message.reply("ok")
 @app.on_message(Filters.command("set"))
 def forward(client, message):
-  with open("source.txt" , "w") as file:
-   file.write(message.text.split(' ')[1])
-   file.close()
-   message.reply("ok")
+ with open("source.txt" , "w") as file:
+  file.write(message.text.split(' ')[1])
+  file.close()
+  message.reply("ok")
 @app.on_message( Filters.text & ~Filters.edited)
 def forward(client, message):
  fil = open("source.txt" , "r")
@@ -20,17 +20,17 @@ def forward(client, message):
  fil.close()
  for t in lins:
   if int(t) == message.chat.id:
-    text = message.text
-    f = False
-    words = ['dekho','fix','😱','😢','😳','fixer','👆','👇','match','pass','sab','chase','defend','hai','karvana','link','loss','audio','varna','pura','puri','open','paid','contact','baazigar','market','load','whatsapp','timepass','kamma','book','teenpatti','diya','bhai','😀','😑','😐','😊','😜','😇','😎','😂','😘','😋','😝','🥺','members','🖕','member','only','chut','lund','gand','ma','maa','bhosdi','bahan','loude','lode','lavde','chutiya','🤞','🤟','☝️','mkc','bkc','mc','bc','madarchod','bahanchod','bahnchod','gandu','❓','kya','wbt','line','who',"https://",'joinchat','bullet','fuck','🤔','LUND',"?","LU"]
-    for word in words:
-        if word.casefold() in text.casefold():
-            f = True
-    if not f:
-     mes = client.send_message(d, "<b>" + message.text + "</b>", parse_mode="html" )
-     files = open("sure.txt" , "a")
-     files.write(" " + str(message.message_id) +  " " + str(mes.message_id))
-     files.close()  
+   text = message.text
+   f = False
+   words = ['dekho','fix','😱','😢','😳','fixer','👆','👇','match','pass','sab','chase','defend','hai','karvana','link','loss','audio','varna','pura','puri','open','paid','contact','baazigar','market','load','whatsapp','timepass','kamma','book','teenpatti','diya','bhai','😀','😑','😐','😊','😜','😇','😎','😂','😘','😋','😝','🥺','members','🖕','member','only','chut','lund','gand','ma','maa','bhosdi','bahan','loude','lode','lavde','chutiya','🤞','🤟','☝️','mkc','bkc','mc','bc','madarchod','bahanchod','bahnchod','gandu','❓','kya','wbt','line','who',"https://",'joinchat','bullet','fuck','🤔','LUND',"?","LU"]
+   for word in words:
+    if word.casefold() in text.casefold():
+     f = True
+   if not f:
+    mes = client.send_message(d, "<b>" + message.text + "</b>", parse_mode="html" )
+    files = open("sure.txt" , "a")
+    files.write(" " + str(message.message_id) +  " " + str(mes.message_id))
+    files.close()  
 @app.on_message( Filters.text & Filters.edited)
 def forward(client, message):
  fil = open("source.txt" , "r")
