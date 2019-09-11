@@ -1,4 +1,6 @@
 from pyrogram import Client, Filters
+from pyrogram.errors import FloodWait
+import time
 app = Client("baaz",869912,"a7b049e08df35464047d57e5134327e5")
 d = -1001378725482
 @app.on_message(Filters.command("clear"))
