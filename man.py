@@ -27,7 +27,7 @@ def forward(client, message):
     if word.casefold() in text.casefold():
      f = True
    if not f:
-    mes = client.send_message(d, "<b>" + message.text + "</b>", parse_mode="html" )
+    mes = client.send_message(d, "<b>" + message.text.replace("TRINBAGO","TRIBAGO") + "</b>", parse_mode="html" )
     files = open("sure.txt" , "a")
     files.write(" " + str(message.message_id) +  " " + str(mes.message_id))
     files.close()  
@@ -46,7 +46,7 @@ def forward(client, message):
     id = str(message.message_id)
     if id in x:
      try:
-      client.edit_message_text(d,int(x[x.index(id)+1]),"<b>" + message.text.replace("🇩🇪","🇳🇮").replace("🎾","🥎").replace("🖲","🧤").replace("📟","🛑").replace("WD","🔷 WIDE BALL 🔷").replace("/","~").replace("CHALU RAKHO","GAME STARTED, PLAYERS ON THE STEDIUM ").replace("NB","🔷 NO BALL 🔷") + "</b>", parse_mode="html" )
+      client.edit_message_text(d,int(x[x.index(id)+1]),"<b>" + message.text.replace("TRINBAGO","TRIBAGO") + "</b>", parse_mode="html" )
      except FloodWait as e:
       time.sleep(e.x)
 
