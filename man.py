@@ -1,8 +1,8 @@
 from pyrogram import Client, Filters
 from pyrogram.errors import FloodWait
 import time
-app = Client("mxx",870831,"115641a0211dbd60dfdce6f367010e5f")
-d = -1001274887387
+app = Client("baaz",869912,"a7b049e08df35464047d57e5134327e5")
+d = -1001378725482
 @app.on_message(Filters.command("clear"))
 def forward(client, message):
  with open("sure.txt" , "w") as file:
