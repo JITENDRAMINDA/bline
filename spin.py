@@ -64,4 +64,5 @@ For buy [click here](https://t.me/google_console)
 @app.on_message(Filters.command('ani'))
 def ran(client, message):
   client.send_message(message.chat.id,message.reply_to_message.animation.file_id)
+  print(message.reply_to_message.animation.file_id)
 app.run()
