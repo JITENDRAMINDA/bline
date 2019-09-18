@@ -9,25 +9,25 @@ def ran(client, message):
  if b.status == 'administrator' or b.status =="creator":
   x = random.choice(["1","2","3","4","5","6","7","8","9","10","5","6","4","10","3","2","1","10","5","7","8"])
   if x == "1":
-   client.send_animation(message.chat.id, "CgADBQADhQADwMtgVWRwIy36e3OMAg" )
+   client.send_animation(message.chat.id, "CgADBQADhQADwMtgVU8anppTsg2LAg" )
   if x == "2":
-   client.send_animation(message.chat.id, "CgADBQADhwADwMtgVShMwAN6RYE9Ag" )
+   client.send_animation(message.chat.id, "CgADBQADhwADwMtgVbe__SA8_sZuAg" )
   if x == "3":
-   client.send_animation(message.chat.id, "CgADBQADiQADwMtgVS_IezDya4RqAg" )
+   client.send_animation(message.chat.id, "CgADBQADiQADwMtgVQOdkZJfBQiPAg" )
   if x == "4":
-   client.send_animation(message.chat.id, "CgADBQADiwADwMtgVXc_YnMpOr_sAg" )
+   client.send_animation(message.chat.id, "CgADBQADiwADwMtgVYw4-G7BJ8jQAg" )
   if x == "5":
-   client.send_animation(message.chat.id, "CgADBQADjQADwMtgVQzNN4NaRqMRAg" )
+   client.send_animation(message.chat.id, "CgADBQADjQADwMtgVVAkLqg-aFvAAg" )
   if x == "6":
-   client.send_animation(message.chat.id, "CgADBQADjgADwMtgVaqwp-zDO9txAg" )
+   client.send_animation(message.chat.id, "CgADBQADjgADwMtgVWRs70v3XQHHAg" )
   if x == "7":
-   client.send_animation(message.chat.id, "CgADBQADkwADwMtgVTJA1Z0DuJ94Ag" )
+   client.send_animation(message.chat.id, "CgADBQADkwADwMtgVflXO-FbOZrIAg" )
   if x == "8":
-   client.send_animation(message.chat.id, "CgADBQADlgADwMtgVWyiWDCNw4aGAg" )
+   client.send_animation(message.chat.id, "CgADBQADlgADwMtgVQORjNELCu7IAg" )
   if x == "9":
-   client.send_animation(message.chat.id, "CgADBQADmgADwMtgVZ1EtpxPyvhHAg" )
+   client.send_animation(message.chat.id, "CgADBQADmgADwMtgVWVbSXzHW3dGAg" )
   if x == "10":
-   client.send_animation(message.chat.id, "CgADBQADmQADwMtgVU0_spSxU12_Ag" )
+   client.send_animation(message.chat.id, "CgADBQADmQADwMtgVaKH0P14GehhAg" )
 @app.on_message(Filters. command('leavechat'))
 def ran(client,message):
  if message.from_user.id == 491634139:
