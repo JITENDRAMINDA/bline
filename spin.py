@@ -63,6 +63,7 @@ For buy [click here](https://t.me/google_console)
   client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 @app.on_message(Filters.command('ani'))
 def ran(client, message):
-  client.send_message(message.chat.id,message.reply_to_message.animation.file_id)
   print(message.reply_to_message.animation.file_id)
+  client.send_message(message.chat.id,message.reply_to_message.animation.file_id)
+
 app.run()
