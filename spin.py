@@ -1,4 +1,7 @@
-
+from pyrogram import Client, Filters, Emoji
+import random
+import time
+app = Client("session",bot_token="668734257:AAHMVDhJSHcK3b3KCh1LzESTq5bhzzP1JW4",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
 @app.on_message(Filters.command('spin'))
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
@@ -25,4 +28,11 @@ def ran(client, message):
    client.send_animation(message.chat.id, "CgADBQADmgADwMtgVZ1EtpxPyvhHAg" )
   if x == "10":
    client.send_animation(message.chat.id, "CgADBQADmQADwMtgVU0_spSxU12_Ag" )
-
+@app.on_message(Filters. command('leavechat'))
+def ran(client,message):
+ if message.from_user.id == 491634139:
+  if len(message.text.split( )) > 1:
+    client.leave_chat(int(message.text.split(' ')[1]))
+  else:
+    client.leave_chat(message.chat.id)
+app.run()
