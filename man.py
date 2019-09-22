@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters
 from pyrogram.errors import FloodWait
 import time
-app = Client("mnnn",768402,"f6420bf67303614279049d48d3e670f6")
+app = Client("my",1134067,"f743379074210a6bf6830f77b4ba04ab")
 d = -1001289914295
 @app.on_message(Filters.command("clear"))
 def forward(client, message):
@@ -29,7 +29,7 @@ def forward(client, message):
     if word.casefold() in text.casefold():
      f = True
    if not f:
-    mes = client.send_message(d, "<b>" + message.text.replace("TRINBAGO","TRIBAGO") + "</b>", parse_mode="html" )
+    mes = client.send_message(d,message.text)
     files = open("sure.txt" , "a")
     files.write(" " + str(message.message_id) +  " " + str(mes.message_id))
     files.close()  
@@ -48,7 +48,7 @@ def forward(client, message):
     id = str(message.message_id)
     if id in x:
      try:
-      client.edit_message_text(d,int(x[x.index(id)+1]),"<b>" + message.text.replace("TRINBAGO","TRIBAGO") + "</b>", parse_mode="html" )
+      client.edit_message_text(d,int(x[x.index(id)+1]),message.text)
      except FloodWait as e:
       time.sleep(e.x)
 app.run()
