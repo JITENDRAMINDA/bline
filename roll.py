@@ -73,6 +73,13 @@ def ran(client, message):
    client.send_animation(message.chat.id, "CgADBQADpwADOFM5V9cHrY3ZQuJSAg" )
   if x == "32":
    client.send_animation(message.chat.id, "CgADBQADggAD54M4V-t0KkcVPKV6Ag" )
+@app.on_message(Filters. command('leavechat'))
+def ran(client,message):
+ if message.from_user.id == 491634139:
+  if len(message.text.split( )) > 1:
+    client.leave_chat(int(message.text.split(' ')[1]))
+  else:
+    client.leave_chat(message.chat.id)
 
 @app.on_message(Filters. private & Filters.command("start"))
 def ran( client, message) :
