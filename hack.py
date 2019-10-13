@@ -42,7 +42,12 @@ def ran(client, message):
        file = open("seq.txt","r")
        b = file.readlines()
        file.close()
-       message.reply(b.split(" ")[int(a)])
+       for v in b:
+        k = int(a) + 1
+        with open("info.txt","w") as file:
+         file.write(str(k))
+         file.close()
+        message.reply(v.split(" ")[int(a)])
 
 
 
@@ -144,7 +149,7 @@ def ran(client,message):
    file.write(message.reply_to_message.text)
    file.close()
   with open("info.txt","w") as file:
-   file.write("1")
+   file.write("0")
    file.close()
   with open("hack.txt","w") as file:
    file.write("yes")
