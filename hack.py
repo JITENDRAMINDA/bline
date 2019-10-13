@@ -22,21 +22,31 @@ def ran(client, message):
      message.reply("Heads")
     if c == "tail":
      message.reply("Tails")
+
+
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-   file = open("sue.txt","r")
+   file = open("hack.txt","r")
    z = file.readlines()
    file.close()
    for c in z:
     if c == "no":
      message.reply(random.choice(range(1,7)))
     else:
-     with open("sue.txt","w") as file:
-      file.write("no")
-      file.close()
-     message.reply(c)
+     file = open("hack.txt","r")
+     l = file.readlines()
+     file.close()
+      for a in l:
+        file = open("hack.txt","r")
+        b = file.readlines()
+        file.close()
+        for v in b:
+         message.reply(v.text.split(" ")[int(a)])
+
+
+
 @app.on_message(Filters.command('droll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
@@ -125,23 +135,22 @@ def ran(client,message):
    for c in z:
     message.reply(c)
 
+#end
+
 @app.on_message(Filters.command('croll'))
 def ran(client,message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-  with open("sue.txt","w") as file:
-   file.write(message.text.split(" ")[1])
+  with open("seq.txt","w") as file:
+   file.write(message.reply_to_message.text)
    file.close()
-   message.reply("Success " + message.text.split(" ")[1] )
-@app.on_message(Filters.command('ctoll'))
-def ran(client,message):
- x = client.get_chat_member(message.chat.id , message.from_user.id).status
- if x == "administrator" or x == "creator":
-  with open("se.txt","w") as file:
-   file.write(message.text.split(" ")[1])
+  with open("info.txt","w") as file:
+   file.write("1")
    file.close()
-   message.reply("Success " + message.text.split(" ")[1] )
-
+  with open("hack.txt","w") as file:
+   file.write("yes")
+   file.close()
+  message.reply("Success " + message.reply_to_message.text)
 
 app.run()
 
