@@ -65,16 +65,12 @@ def ran(client,message):
     client.leave_chat(message.chat.id)
 @app.on_message(Filters. command('cnnn'))
 def ran(client,message):
- x = message.from_user.id
- if x == 491634139 :
   with open("sure.txt","w") as file:
    file.write("no")
    file.close()
    message.reply("Success off")
 @app.on_message(Filters.command('cyyy'))
 def ran(client,message):
- x = message.from_user.id
- if x == 491634139 :
   with open("sure.txt","w") as file:
    file.write("yes")
    file.close()
