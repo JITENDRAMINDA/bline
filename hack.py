@@ -91,4 +91,13 @@ def ran(client,message):
    file.write("yes")
    file.close()
    message.reply("Success on")
+@app.on_message(Filters.command('statss'))
+def ran(client,message):
+ if x == "administrator" or x == "creator":
+   file = open("sure.txt","r")
+   z = file.readlines()
+   file.close()
+   for c in z:
+    message.reply(c)
 app.run()
+
