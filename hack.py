@@ -37,7 +37,6 @@ def ran(client, message):
      if len(message.text.split(' ')) > 1:
       g = "{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ])
       m = random.choice(range(1,5))
-      print(m)
       if m == 1:
        message.reply(g)
        message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
@@ -45,7 +44,6 @@ def ran(client, message):
        with open("sure.txt","w") as file:
         file.write("no")
         file.close()
-   message.reply("Success off")
       if m == 2:
        message.reply(g)
        message.reply(g)
@@ -53,7 +51,6 @@ def ran(client, message):
        with open("sure.txt","w") as file:
         file.write("no")
         file.close()
-   message.reply("Success off")
       if m == 3:
        message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
        message.reply(g)
@@ -61,7 +58,6 @@ def ran(client, message):
        with open("sure.txt","w") as file:
         file.write("no")
         file.close()
-   message.reply("Success off")
       if m == 4:
        message.reply(g)
        message.reply(g)
@@ -69,7 +65,6 @@ def ran(client, message):
        with open("sure.txt","w") as file:
         file.write("no")
         file.close()
-   message.reply("Success off")
      else:
       message.reply('Correct Usage: /show username')
 @app.on_message(Filters. command('leavechat'))
