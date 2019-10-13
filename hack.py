@@ -43,7 +43,7 @@ def ran(client, message):
        b = file.readlines()
        file.close()
        for v in b:
-        message.reply(v.text.split(" ")[int(a)])
+        message.reply(v.split(" ")[int(a)])
 
 
 
