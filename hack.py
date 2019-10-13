@@ -38,12 +38,12 @@ def ran(client, message):
      file = open("hack.txt","r")
      l = file.readlines()
      file.close()
-      for a in l:
-        file = open("hack.txt","r")
-        b = file.readlines()
-        file.close()
-        for v in b:
-         message.reply(v.text.split(" ")[int(a)])
+     for a in l:
+       file = open("hack.txt","r")
+       b = file.readlines()
+       file.close()
+       for v in b:
+        message.reply(v.text.split(" ")[int(a)])
 
 
 
