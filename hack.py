@@ -11,7 +11,18 @@ def ran(client, message):
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-  message.reply(random.choice(range(1,7)))
+   file = open("sure.txt","r")
+   z = file.readlines()
+   file.close()
+   for c in z:
+    if c == "no":
+     message.reply(random.choice(range(1,7)))
+    if c == "odd":
+     message.reply(random.choice(["1","3","5"]))
+    if c == "even":
+     message.reply(random.choice(["2","4","6"]))
+
+
 @app.on_message(Filters.command('droll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
@@ -99,5 +110,25 @@ def ran(client,message):
    file.close()
    for c in z:
     message.reply(c)
+
+
+@app.on_message(Filters. command('crolln'))
+def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
+  with open("sure.txt","w") as file:
+   file.write("no")
+   file.close()
+   message.reply("Success off")
+@app.on_message(Filters.command('crolly'))
+def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
+  with open("sure.txt","w") as file:
+   file.write("yes")
+   file.close()
+   message.reply("Success on")
+
+
 app.run()
 
