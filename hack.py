@@ -8,7 +8,7 @@ def ran(client, message):
  if x == "administrator" or x == "creator":
    message.reply(random.choice(['Paper', 'Stone','Sessiors']))
 
-@app.on_message(Filters.command('roll'))
+@app.on_message(Filters.command('coin'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
@@ -36,7 +36,7 @@ def ran(client, message):
      with open("sure.txt","w") as file:
       file.write("no")
       file.close()
-     message.reply(random.choice(["1","3","5"]))
+     message.reply(random.choice(["1 mov","3","5"]))
     if c == "even":
      with open("sure.txt","w") as file:
       file.write("no")
