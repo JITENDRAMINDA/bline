@@ -76,18 +76,23 @@ def ran(client,message):
     client.leave_chat(message.chat.id)
 @app.on_message(Filters. command('cnnn'))
 def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
   with open("sure.txt","w") as file:
    file.write("no")
    file.close()
    message.reply("Success off")
 @app.on_message(Filters.command('cyyy'))
 def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
   with open("sure.txt","w") as file:
    file.write("yes")
    file.close()
    message.reply("Success on")
 @app.on_message(Filters.command('statss'))
 def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
    file = open("sure.txt","r")
    z = file.readlines()
