@@ -33,8 +33,14 @@ def ran(client, message):
     if c == "no":
      message.reply(random.choice(range(1,7)))
     if c == "odd":
+     with open("sure.txt","w") as file:
+      file.write("no")
+      file.close()
      message.reply(random.choice(["1","3","5"]))
     if c == "even":
+     with open("sure.txt","w") as file:
+      file.write("no")
+      file.close()
      message.reply(random.choice(["2","4","6"]))
 
 
