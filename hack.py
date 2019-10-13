@@ -42,8 +42,7 @@ def ran(client, message):
        file = open("seq.txt","r")
        b = file.readlines()
        file.close()
-       for v in b:
-        message.reply(v.split(" ")[int(a)])
+       message.reply(b.split(" ")[int(a)])
 
 
 
