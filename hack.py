@@ -11,7 +11,7 @@ def ran(client, message):
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-   file = open("sure.txt","r")
+   file = open("sue.txt","r")
    z = file.readlines()
    file.close()
    for c in z:
@@ -115,7 +115,7 @@ def ran(client,message):
 def ran(client,message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-  with open("sure.txt","w") as file:
+  with open("sue.txt","w") as file:
    file.write(message.text.split(" ")[1])
    file.close()
    message.reply("Success " + message.text.split(" ")[1] )
