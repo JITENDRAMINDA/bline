@@ -7,6 +7,21 @@ def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
    message.reply(random.choice(['Paper', 'Stone','Sessiors']))
+
+@app.on_message(Filters.command('roll'))
+def ran(client, message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
+   file = open("se.txt","r")
+   z = file.readlines()
+   file.close()
+   for c in z:
+    if c == "no":
+     message.reply(randon.choice(["Heads","Tails","Tails","Heads","Tails","Heads"]))
+    if c == "head":
+     message.reply("Heads")
+    if c == "tail":
+     message.reply("Tails")
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
@@ -115,7 +130,7 @@ def ran(client,message):
 def ran(client,message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
-  with open("sue.txt","w") as file:
+  with open("se.txt","w") as file:
    file.write(message.text.split(" ")[1])
    file.close()
    message.reply("Success " + message.text.split(" ")[1] )
