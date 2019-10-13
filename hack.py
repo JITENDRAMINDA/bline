@@ -37,8 +37,6 @@ def ran(client, message):
          with open("info.txt","w") as file:
           file.write(str(k))
           file.close()
-
-
 @app.on_message(Filters.command('droll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
