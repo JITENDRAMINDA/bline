@@ -35,11 +35,11 @@ def ran(client, message):
     if c == "no":
      message.reply(random.choice(range(1,7)))
     else:
-     file = open("hack.txt","r")
+     file = open("info.txt","r")
      l = file.readlines()
      file.close()
      for a in l:
-       file = open("hack.txt","r")
+       file = open("seq.txt","r")
        b = file.readlines()
        file.close()
        for v in b:
