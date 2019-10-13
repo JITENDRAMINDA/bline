@@ -111,23 +111,14 @@ def ran(client,message):
    for c in z:
     message.reply(c)
 
-
-@app.on_message(Filters. command('crolln'))
+@app.on_message(Filters.command('croll'))
 def ran(client,message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
   with open("sure.txt","w") as file:
-   file.write("no")
+   file.write(message.text.split(" ")[1])
    file.close()
-   message.reply("Success off")
-@app.on_message(Filters.command('crolly'))
-def ran(client,message):
- x = client.get_chat_member(message.chat.id , message.from_user.id).status
- if x == "administrator" or x == "creator":
-  with open("sure.txt","w") as file:
-   file.write("yes")
-   file.close()
-   message.reply("Success on")
+   message.reply("Success " + message.text.split(" ")[1] )
 
 
 app.run()
