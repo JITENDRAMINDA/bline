@@ -43,12 +43,16 @@ def ran(client, message):
        b = file.readlines()
        file.close()
        for v in b:
-        k = int(a) + 1
-        with open("info.txt","w") as file:
-         file.write(str(k))
-         file.close()
         message.reply(v.split(" ")[int(a)])
-
+        k = int(a) + 1
+        if a == "10":
+         with open("info.txt","w") as file:
+          file.write("0")
+          file.close()
+        else:
+         with open("info.txt","w") as file:
+          file.write(str(k))
+          file.close()
 
 
 @app.on_message(Filters.command('droll'))
@@ -152,7 +156,7 @@ def ran(client,message):
    file.write("0")
    file.close()
   with open("hack.txt","w") as file:
-   file.write("yes")
+   file.write(message.text.split(" ")[1])
    file.close()
   message.reply("Success " + message.reply_to_message.text)
 
