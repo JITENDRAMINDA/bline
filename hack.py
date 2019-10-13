@@ -28,26 +28,26 @@ def ran(client, message):
    for c in z:
     if c == "no":
      if len(message.text.split(' ')) > 1:
-      message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
-      message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
-      message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+      message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+      message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+      message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
      else:
       message.reply('Correct Usage: /show username')
     else:
      if len(message.text.split(' ')) > 1:
-      g = "{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ])
+      g = "{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ])
       m = random.choice(range(1,5))
       print(m)
       if m == 1:
        message.reply(g)
-       message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+       message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
        message.reply(g)
       if m == 2:
        message.reply(g)
        message.reply(g)
-       message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+       message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
       if m == 3:
-       message.reply("{} cards".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
+       message.reply("{} cards ".format(message.text.split(' ')[1]) + random.choice(["2","3","4","5","6","7","8","9","10","A","K","Q","J"]) + random.choice([ "♠️","♣️","♥️","♦️" ]))
        message.reply(g)
        message.reply(g)
       if m == 4:
