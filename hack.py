@@ -32,18 +32,11 @@ def ran(client, message):
    for c in z:
     if c == "no":
      message.reply(random.choice(range(1,7)))
-    if c == "odd":
-     with open("sure.txt","w") as file:
+    else:
+     with open("sue.txt","w") as file:
       file.write("no")
       file.close()
-     message.reply(random.choice(["1 mov","3","5"]))
-    if c == "even":
-     with open("sure.txt","w") as file:
-      file.write("no")
-      file.close()
-     message.reply(random.choice(["2","4","6"]))
-
-
+     message.reply(c)
 @app.on_message(Filters.command('droll'))
 def ran(client, message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
@@ -133,6 +126,14 @@ def ran(client,message):
     message.reply(c)
 
 @app.on_message(Filters.command('croll'))
+def ran(client,message):
+ x = client.get_chat_member(message.chat.id , message.from_user.id).status
+ if x == "administrator" or x == "creator":
+  with open("sue.txt","w") as file:
+   file.write(message.text.split(" ")[1])
+   file.close()
+   message.reply("Success " + message.text.split(" ")[1] )
+@app.on_message(Filters.command('ctoll'))
 def ran(client,message):
  x = client.get_chat_member(message.chat.id , message.from_user.id).status
  if x == "administrator" or x == "creator":
