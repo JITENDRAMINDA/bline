@@ -9,9 +9,9 @@ app.on_message(Filters.command('sin'))
 def ran(client, message):
  now = datetime.now()
  current_time = now.strftime("%m %d %Y")
- m = current_time.split(" ")[1]
- d = current_time.split(" ")[2]
- y = current_time.split(" ")[3]
+ m = current_time.split(" ")[0]
+ d = current_time.split(" ")[1]
+ y = current_time.split(" ")[2]
  if month[Message.chat.id] == int(d):
   message.reply("yes")
  else:
@@ -87,9 +87,9 @@ def joined(client, Message):
          client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
          now = datetime.now()
          current_time = now.strftime("%m %d %Y")
-         m = current_time.split(" ")[1]
-         d = current_time.split(" ")[2]
-         y = current_time.split(" ")[3]
+         m = current_time.split(" ")[0]
+         d = current_time.split(" ")[1]
+         y = current_time.split(" ")[2]
          month[Message.chat.id] = int(d)
 
 app.run()
