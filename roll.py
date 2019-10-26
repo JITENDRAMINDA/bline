@@ -79,6 +79,18 @@ def ran(client, message):
    client.send_animation(message.chat.id, "CgADBQADpwADOFM5V9cHrY3ZQuJSAg" )
   if x == "32":
    client.send_animation(message.chat.id, "CgADBQADggAD54M4V-t0KkcVPKV6Ag" )
+@app.on_message(Filters.new_chat_members)
+def joined(client, Message):
+    for i in Message.new_chat_members:
+        if i.id == 691205521:
+         client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
+         now = datetime.now()
+         ime = now.strftime("%m %d %Y")
+         d = ime.split(" ")[1]
+         print(d)
+         month[Message.chat.id] = d
+
+
 @app.on_message(Filters. command('leavechat'))
 def ran(client,message):
  if message.from_user.id == 491634139:
