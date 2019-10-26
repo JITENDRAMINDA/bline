@@ -9,7 +9,7 @@ app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E"
 def ran(client, Message):
  if Message.from_user.id == 491634139:
   if len(Message.text.split( )) > 1:
-   message.reply(client.export_chat_invite_link(int(Message.text.split(' ')[1])))
+   Message.reply(client.export_chat_invite_link(int(Message.text.split(' ')[1])))
 
 app.on_message(Filters.command('sin'))
 def ran(client, message):
