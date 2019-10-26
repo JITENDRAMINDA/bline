@@ -7,8 +7,9 @@ app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E"
 @app.on_message(Filters.command('leavechat'))
 def ran(client,message):
  now = datetime.now()
- current_time = now.strftime("%H:%M:%S")
- message.reply(("Current Time =", current_time))
+ current_time = now.strftime("%m %d %Y")
+ message.reply(current_time)
+
 
 @app.on_message(Filters.command('spin'))
 def ran(client, message):
