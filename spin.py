@@ -7,6 +7,8 @@ app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E"
 
 app.on_message(Filters.command('sin'))
 def ran(client, message):
+ print(month)
+ print(month[Message.chat.id])
  now = datetime.now()
  ime = now.strftime("%m %d %Y")
  d = ime.split(" ")[1]
@@ -88,6 +90,6 @@ def joined(client, Message):
          d = ime.split(" ")[1]
          print(d)
          month[Message.chat.id] = d
-         print(month)
+         
 
 app.run()
