@@ -5,6 +5,17 @@ import time
 month = {}
 app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
 
+app.on_message(Filters.command('sin'))
+def ran(client, message):
+ now = datetime.now()
+ current_time = now.strftime("%m %d %Y")
+ m = current.time.split(" ")[1]
+ d = current.time.split(" ")[2]
+ y = current.time.split(" ")[3]
+ if month[Message.chat.id] == int(d):
+  message.reply("yes")
+ else:
+  message.reply("no")
 @app.on_message(Filters.command('spin'))
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
@@ -79,6 +90,6 @@ def joined(client, Message):
          m = current.time.split(" ")[1]
          d = current.time.split(" ")[2]
          y = current.time.split(" ")[3]
-         month[Message.chat.id] = int(d) + 1
+         month[Message.chat.id] = int(d)
 
 app.run()
