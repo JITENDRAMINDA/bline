@@ -69,7 +69,7 @@ def ran(client, message):
 @app.on_message(Filters.new_chat_members)
 def joined(client, Message):
     for i in Message.new_chat_members:
-        if i .user.id == 691205521:
+        if i.id == 691205521:
             client.send_message(-1001250871922,"I am added to " + Message.chat.id)
 
 app.run()
