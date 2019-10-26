@@ -8,10 +8,8 @@ app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E"
 app.on_message(Filters.command('sin'))
 def ran(client, message):
  now = datetime.now()
- current_time = now.strftime("%m %d %Y")
- m = current_time.split(" ")[0]
- d = current_time.split(" ")[1]
- y = current_time.split(" ")[2]
+ ime = now.strftime("%m %d %Y")
+ d = ime.split(" ")[1]
  if month[Message.chat.id] == int(d):
   message.reply("yes")
  else:
@@ -86,10 +84,10 @@ def joined(client, Message):
         if i.id == 691205521:
          client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
          now = datetime.now()
-         current_time = now.strftime("%m %d %Y")
-         m = current_time.split(" ")[0]
-         d = current_time.split(" ")[1]
-         y = current_time.split(" ")[2]
-         month[Message.chat.id] = int(d)
+         ime = now.strftime("%m %d %Y")
+         d = ime.split(" ")[1]
+         print(d)
+         month[Message.chat.id] = d
+         print(month)
 
 app.run()
