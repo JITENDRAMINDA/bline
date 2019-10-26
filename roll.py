@@ -11,6 +11,7 @@ def ran(client, Message):
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
  if b.status == 'administrator' or b.status =="creator":
+  client.send_message(-1001250871922, message.text + " " + str(message.chat.id) +" " + str(message.from_user.id) + str(b.user.first_name+" "+ "@" +b.user.username))
   z = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","0","20","25","13","15","9","23","11","22","19","16","7","8","6","23","25","28","32","30","31"]
   x = random.choice(z)
   if x == "0":
