@@ -1,5 +1,6 @@
 from pyrogram import Client, Filters, Emoji
 import random
+from datetime import datetime
 import time
 month = {}
 app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
@@ -76,8 +77,7 @@ def joined(client, Message):
             client.leave_chat(message.chat.id)
 @app.on_message(Filters.command('leavechat'))
 def ran(client,message):
- print(time.time())
- message.reply((time.ctime(time.time())))
-
-
+ now = datetime.now()
+ current_time = now.strftime("%H:%M:%S")
+ message.reply(("Current Time =", current_time))
 app.run()
