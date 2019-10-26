@@ -1,6 +1,7 @@
 from pyrogram import Client, Filters, Emoji
 import random
 import time
+month = {}
 app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
 @app.on_message(Filters.command('spin'))
 def ran(client, message):
@@ -71,5 +72,12 @@ def joined(client, Message):
     for i in Message.new_chat_members:
         if i.id == 691205521:
             client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
+            time.sleep(259200)
+            client.leave_chat(message.chat.id)
+@app.on_message(Filters.command('leavechat'))
+def ran(client,message):
+ Import time
+ print(time.time())
+ message.reply((time.ctime(time.time()))
 
 app.run()
