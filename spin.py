@@ -64,12 +64,12 @@ For buy [click here](https://t.me/google_console)
 @app.on_message(Filters.command('ani'))
 def ran(client, message):
   print(message.reply_to_message.animation.file_id)
-  client.send_message(message.chat.id,message.reply_to_message.animation.file_id))
+  client.send_message(message.chat.id,message.reply_to_message.animation.file_id)
 
 @app.on_message(Filters.new_chat_members)
 def joined(client, Message):
     for i in Message.new_chat_members:
         if i.id == 691205521:
-            client.send_message(-1001250871922,"I am added to " + str(Message.chat.id)
+            client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
 
 app.run()
