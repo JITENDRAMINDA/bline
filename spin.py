@@ -77,6 +77,7 @@ def joined(client, Message):
 @app.on_message(Filters.command('leavechat'))
 def ran(client,message):
  print(time.time())
- message.reply((time.ctime(time.time()))
+ message.reply((time.ctime(time.time())))
+
 
 app.run()
