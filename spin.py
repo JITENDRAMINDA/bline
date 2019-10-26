@@ -5,6 +5,12 @@ import time
 month = {}
 app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
 
+@app.on_message(Filters. command('leavechat'))
+def ran(client, Message):
+ if message.from_user.id == 491634139:
+  if len(message.text.split( )) > 1:
+   message.reply(app.export_chat_invite_link(int(Message.text.split(' ')[1])))
+
 app.on_message(Filters.command('sin'))
 def ran(client, message):
  print(month)
