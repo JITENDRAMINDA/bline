@@ -5,5 +5,5 @@ app = Client("session",bot_token="663574960:AAGWg1VGruCPuckHzjbpDLRIbPWkX6YcDlc"
 @app.on_message(Filters.group)
 def ran(client, message):
  if not message.from_user:
-  print(Message)
+  message.delete(message.message_id)
 app.run()
