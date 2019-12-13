@@ -6,7 +6,6 @@ def ran(client, Message):
  if Message.from_user.id == 491634139:
   if len(Message.text.split( )) > 1:
    Message.reply(client.export_chat_invite_link(int(Message.text.split(' ')[1])))
-
 @app.on_message(Filters.command('rt'))
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
@@ -83,13 +82,8 @@ def ran(client, message):
 @app.on_message(Filters.new_chat_members)
 def joined(client, Message):
     for i in Message.new_chat_members:
-        if i.id == 691205521:
-         client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
-         now = datetime.now()
-         ime = now.strftime("%m %d %Y")
-         d = ime.split(" ")[1]
-         print(d)
-         month[Message.chat.id] = d
+     if i.id == 691205521:
+      client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
 
 
 @app.on_message(Filters. command('leavechat'))
