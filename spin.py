@@ -2,7 +2,6 @@ from pyrogram import Client, Filters, Emoji
 import random
 from datetime import datetime
 import time
-month = {}
 app = Client("session",bot_token="691205521:AAEHy793MZQi7tvxTNAJ62XvPt4VvQiie-E",api_id=605563,api_hash="7f2c2d12880400b88764b9b304e14e0b") 
 
 @app.on_message(Filters. command('getlink'))
@@ -11,17 +10,6 @@ def ran(client, Message):
   if len(Message.text.split( )) > 1:
    Message.reply(client.export_chat_invite_link(int(Message.text.split(' ')[1])))
 
-app.on_message(Filters.command('sin'))
-def ran(client, message):
- print(month)
- print(month[Message.chat.id])
- now = datetime.now()
- ime = now.strftime("%m %d %Y")
- d = ime.split(" ")[1]
- if month[Message.chat.id] == int(d):
-  message.reply("yes")
- else:
-  message.reply("no")
 @app.on_message(Filters.command('spin'))
 def ran(client, message):
  b = client.get_chat_member(message.chat.id,message.from_user.id)
@@ -89,13 +77,8 @@ def ran(client, message):
 @app.on_message(Filters.new_chat_members)
 def joined(client, Message):
     for i in Message.new_chat_members:
-        if i.id == 691205521:
-         client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
-         now = datetime.now()
-         ime = now.strftime("%m %d %Y")
-         d = ime.split(" ")[1]
-         print(d)
-         month[Message.chat.id] = d
+     if i.id == 691205521:
+      client.send_message(-1001250871922,"I am added to " + str(Message.chat.id))
          
 
 app.run()
